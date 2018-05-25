@@ -8,6 +8,9 @@ import bridges.data_src_dependent.USGSaccount;
 import java.util.List;
 import java.math.*;
 
+/*
+ * Output at: http://bridges-clone.herokuapp.com/assignments/75/agoncharow
+ */
 
 public class EQGraph
 {
