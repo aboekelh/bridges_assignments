@@ -46,10 +46,12 @@ Visualize an array of 10 elements where each element stores a square number.
 #### for Java
 
 [Array documentation](http://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_array.html)
+
 [Element documentation](http://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_element.html)
 
 #### for C++
 
 
 [Array documentation](http://bridgesuncc.github.io/doc/cxx-api/current/html/classbridges_1_1_array.html)
+
 [Element documentation](http://bridgesuncc.github.io/doc/cxx-api/current/html/classbridges_1_1_element.html)
