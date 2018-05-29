@@ -5,8 +5,18 @@ Goals
 -----
 
 The purpose of this assignment is to
-1. Show you how to create an account on the BRIDGES server.
+1. Create an account on the BRIDGES server.
 2. Use your BRIDGES credential in code.
 3. Upload a simple visualization to BRIDGES.
 4. Check it works.
+
+Create an account on the BRIDGES server
+---------------------------------------
+
+1. Go to http://bridgesuncc.github.io/
+2. Click on "Login" (at the upper right corner)
+3. Click on "Sign Up!" (at the bottom of the "log in!" box)
+4. Fill up form (Email is only used to recover password)
+5. Go to the "Profile" page (link at the top right)
+6. Note the "API Sha1 Key", you will need it in the next part
 
