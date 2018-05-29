@@ -15,8 +15,28 @@ Create an account on the BRIDGES server
 
 1. Go to http://bridgesuncc.github.io/
 2. Click on "Login" (at the upper right corner)
-3. Click on "Sign Up!" (at the bottom of the "log in!" box)
+3. Click on "Sign Up!" (at the bottom of the "Log in!" box)
 4. Fill up form (Email is only used to recover password)
 5. Go to the "Profile" page (link at the top right)
 6. Note the "API Sha1 Key", you will need it in the next part
 
+Programming part
+----------------
+
+### Task
+
+Visualize an array of 10 elements where each element should stores a square numbers.
+
+### Using credentials
+
+1. Open your scaffolded code.
+2. Plug your credentials.
+3. Compile and run the code.
+4. Follow the link and check that you can see an array of  2 elements.
+
+### Changing the array
+
+1. Change the array size to 10.
+2. Initialize each entry of the array to store a square number (0, 1, 4, ...) using a for loop.
+3. Compile and run the code.
+4. Follow the link and check that you can see an array of square numbers.
