@@ -6,7 +6,7 @@ using namespace bridges;
 int main() {
 
 	//create the Bridges object, set credentials
-	Bridges::initialize(0, "YOUR_USER_ID", "YOUR_API_KEY");
+	Bridges::initialize(0, "bridges_workshop", "1298385986627");
 	
 	Bridges::setTitle("Array Example");
 
