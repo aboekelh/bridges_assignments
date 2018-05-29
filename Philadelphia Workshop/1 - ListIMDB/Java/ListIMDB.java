@@ -11,7 +11,9 @@ public class ListIMDB {
 
 		/* Initialize a Bridges connection with your credentials */
 		Bridges bridges = new Bridges(1, "YOUR_API_KEY", "YOUR_USER_ID");
-		bridges.setServer("local");
+
+		/* Set an assignment title */
+		bridges.setTitle("ListIMDB Example");
 
 		/* Get a List of ActorMovieIMDB objects from Bridges */
 		List<ActorMovieIMDB> mylist = bridges.getActorMovieIMDBData("imdb", Integer.MAX_VALUE);

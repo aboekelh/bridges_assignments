@@ -5,38 +5,26 @@ import bridges.base.Element;
 public class Setup {
 	public static void main(String[] args) throws Exception {
 
-    		//create the Bridges object, set credentials
+    /* Initialize a Bridges connection with your credentials */
 		Bridges bridges = new Bridges(0, "YOUR_API_KEY", "YOUR_USER_ID");
 
-		bridges.setTitle(“Array Example”);
+		/* Set an assignment title */
+		bridges.setTitle("Array Example");
 
-		//  set array dimensions, allocate array of elements
-    		int arraySize = 10;
+		/* Set up the array dimensions, allocate an Array of Elements */
+    int arraySize = 10;
 		int[] dims = { arraySize, 1, 1 };
 		Array<Integer> arr = new Array<Integer> (1, dims);
 
-		// populate the array, with squares of indices
+		/* Populate the array with integers */
 		for (int k = 0; k < arr.getSize(); k++) {
 			arr.setValue(k, new Element<Integer>(String.valueOf(k),k*k));
 		}
 
-		// color the array elements
-		arr.getValue(0).getVisualizer().setColor("red");
-		arr.getValue(1).getVisualizer().setColor("green");
-		arr.getValue(2).getVisualizer().setColor("blue");
-		arr.getValue(3).getVisualizer().setColor("cyan");
-		arr.getValue(4).getVisualizer().setColor("magenta");
-		arr.getValue(5).getVisualizer().setColor("yellow");
-		arr.getValue(6).getVisualizer().setColor("red");
-		arr.getValue(7).getVisualizer().setColor("green");
-		arr.getValue(8).getVisualizer().setColor("blue");
-		arr.getValue(9).getVisualizer().setColor("black");
-
-    		// tell Bridges what data structure to visualize
+    /* Tell BRIDGES which data structure to visualize */
 		bridges.setDataStructure(arr);
 
-		// visualize the list
-	    	bridges.visualize();
-    }
+		/* Visualize the Array */
+	  bridges.visualize();
+  }
 }
-
