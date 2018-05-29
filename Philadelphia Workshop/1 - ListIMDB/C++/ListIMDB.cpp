@@ -13,9 +13,7 @@ int main() {
 	
 	Bridges::setTitle("List IMDB");
 
-
 	std::vector< ActorMovieIMDB > ami = DataSource::getActorMovieIMDBData();
-
 
 	//building linked list
 	SLelement<ActorMovieIMDB>* head = nullptr;
