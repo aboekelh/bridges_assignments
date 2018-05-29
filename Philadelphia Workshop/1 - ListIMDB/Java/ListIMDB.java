@@ -10,7 +10,7 @@ public class ListIMDB {
 	public static void main(String[] args) throws Exception {
 
 		/* Initialize a Bridges connection with your credentials */
-		Bridges bridges = new Bridges(1, "YOUR_API_KEY", "YOUR_USER_ID");
+		Bridges bridges = new Bridges(1, "bridges_workshop", "1298385986627");
 
 		/* Set an assignment title */
 		bridges.setTitle("ListIMDB Example");

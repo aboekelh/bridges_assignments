@@ -55,7 +55,7 @@ public class ListEQ {
 	public static void main(String[] args) throws Exception {
 
 		/* Initialize a Bridges connection with your credentials */
-		Bridges bridges = new Bridges(2, "YOUR_API_KEY", "YOUR_USER_ID");
+		Bridges bridges = new Bridges(2, "bridges_workshop", "1298385986627");
 
     /* Set an assignment title */
     bridges.setTitle("ListEQ Example");
