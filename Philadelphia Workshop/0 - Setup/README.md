@@ -25,7 +25,7 @@ Programming part
 
 ### Task
 
-Visualize an array of 10 elements where each element should stores a square numbers.
+Visualize an array of 10 elements where each element stores a square number.
 
 ### Using credentials
 
@@ -40,3 +40,16 @@ Visualize an array of 10 elements where each element should stores a square numb
 2. Initialize each entry of the array to store a square number (0, 1, 4, ...) using a for loop.
 3. Compile and run the code.
 4. Follow the link and check that you can see an array of square numbers.
+
+### Help
+
+#### for Java
+
+[Array documentation](http://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_array.html)
+[Element documentation](http://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_element.html)
+
+#### for C++
+
+
+[Array documentation](http://bridgesuncc.github.io/doc/cxx-api/current/html/classbridges_1_1_array.html)
+[Element documentation](http://bridgesuncc.github.io/doc/cxx-api/current/html/classbridges_1_1_element.html)
