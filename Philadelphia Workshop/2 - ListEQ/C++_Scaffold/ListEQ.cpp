@@ -25,45 +25,8 @@ void setProperties(SLelement<EarthquakeUSGS>* el) {
   /* Get the magnitude of the earthquake from the SLelement
    *   (the EarthquakeUSGS object is stored as the value inside the SLelement)
    */
-  double magnitude = el->getValue().getMagnitude();
-  
-  /* Prepare color and size variables */
-  std::string color = "";
-  float size = 0.0f;
-  
-  /* Pick the color depending on the magnitude */
-  if(magnitude < 1.0) {
-    color = "blue";
-  } else if(magnitude < 2.0) {
-    color = "green";
-  } else if(magnitude < 3.0) {
-    color = "yellow";
-  } else if(magnitude < 4.0) {
-    color = "orange";
-  } else if(magnitude < 5.0) {
-    color = "red";
-  } else if(magnitude < 6.0) {
-    color = "purple";
-  } else {
-    color = "black";
-  }
 
-  auto vizp = el->getVisualizer();
-  
-  /* Set the color of the Element */
-  vizp->setColor(color);
-    
-  /* Set the size of the Element based on the magnitude */
-  vizp->setSize(magnitude*5);
-  
-  /* Set the shape of the Element based on the location */
-  if(endsWith ( el->getValue().getLocation(), "Alaska")) {
-    vizp->setShape(STAR);
-  }
-  if(endsWith (el->getValue().getLocation(), "Hawaii")) {
-    vizp->setShape(WYE);
-  }
-  
+  /*TODO: set the properties on the element based on location, magnitude of the earthquake */
 }
 
 int main() {
