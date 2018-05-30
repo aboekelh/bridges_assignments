@@ -15,13 +15,13 @@ public class Setup {
 	    /* Set up the array dimensions, allocate an Array of Elements */
 	    /* TODO: Make an array of size 10 */
 	    int arraySize = 2;
-	    int[] dims = { arraySize, 1, 1 };
-	    Array<Integer> arr = new Array<Integer> (1, dims);
+	    Array<Integer> arr = new Array<Integer> (2);
 	    
 	    /* Populate the array with integers */
 	    /* TODO: Make the array store square numbers*/
-	    arr.setValue(0, new Element<Integer>("0",0));
-	    arr.setValue(1, new Element<Integer>("1",1));
+	    arr.getElement(0).setValue (0);
+	    /* set the value as a Label */
+	    arr.getElement(0).setLabel(String.valueOf(0));
 	    
 	    /* Tell BRIDGES which data structure to visualize */
 	    bridges.setDataStructure(arr);

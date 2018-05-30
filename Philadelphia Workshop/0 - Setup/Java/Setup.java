@@ -13,12 +13,12 @@ public class Setup {
 
 		/* Set up the array dimensions, allocate an Array of Elements */
 		int arraySize = 10;
-		int[] dims = { arraySize, 1, 1 };
-		Array<Integer> arr = new Array<Integer> (1, dims);
+		Array<Integer> arr = new Array<Integer> (10);
 
 		/* Populate the array with integers */
 		for (int k = 0; k < arr.getSize(); k++) {
-			arr.setValue(k, new Element<Integer>(String.valueOf(k*k), k));
+			arr.getElement(k).setValue(k*k);
+			arr.getElement(k).setLabel(String.valueOf(k*k));
 		}
 
 		/* Tell BRIDGES which data structure to visualize */

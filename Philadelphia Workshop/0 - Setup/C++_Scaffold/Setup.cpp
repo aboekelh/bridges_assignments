@@ -13,15 +13,15 @@ int main() {
   
   //  set array dimensions, allocate array of elements
   /* TODO: set  an array of size 10 */
-  int dims[3] = {2, 1, 1}
-  Array<int> *arr = new Array<int>(1, dims);
+  int arraySize = 2;
+  Array<int> *arr = new Array<int>(arraySize);
   
   // populate the array, with squares of indices
   /* TODO: make  the array show the first 10 square numbers */
-  arr->getValue(0).setValue(0);
-  arr->getValue(0).setLabel("0");
-  arr->getValue(1).setValue(1);
-  arr->getValue(1).setLabel("1");
+  arr->getElement(0).setValue(0);
+  arr->getElement(0).setLabel("0");
+  arr->getElement(1).setValue(1);
+  arr->getElement(1).setLabel("1");
      
   // tell Bridges what data structure to visualize
   Bridges::setDataStructure(arr);
