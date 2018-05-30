@@ -21,7 +21,7 @@ TODO
 2. Plug in your credentials.
 3. TODO 
 
-### Build Earthquake Graph 
+### Build ColorGrid 
 
 1. TODO
 

@@ -33,12 +33,12 @@ public class GraphEQ {
 		 */
 
         for (int i = 0; i < 100; ++i) {
-			/* TODO:
-			 * Add the top 99 Earthquakes to the graph
-			 * Set each earthquake's location based on its latitude and longitude
-			 * ex: graph.getVisualizer(key).setLocation(earthquake.getLongit(), earthquake.getLatit());
-			 * Tweak the colors or other visual elements if you wish
-			 */
+		/* TODO:
+		 * Add the top 99 Earthquakes to the graph
+		 * Set each earthquake's location based on its latitude and longitude
+		 * ex: graph.getVisualizer(key).setLocation(earthquake.getLongit(), earthquake.getLatit());
+		 * Tweak the colors or other visual elements if you wish
+		 */
         }
 
         bridges.setCoordSystemType("equirectangular");
@@ -48,27 +48,27 @@ public class GraphEQ {
         bridges.setTitle("Earthquake Map");
         bridges.visualize();
 
-        for (int i = 0; i < 99; ++i) {
-			/* TODO:
-			 * Compare the distances between all vertexes in the graph, drawing an edge 
-			 * 	if they are within some threshold. A method is provided to give a rough
-			 * 	estimate between 2 lat,long points.
-			 *
-			 * example usage: calcDistance(eq1.getLatit(), eq1.getLongit(),
-			 * 							   eq2.getLatit(), eq2.getLongit());
-			 * which returns a double representing the distance of two points in KM
-			 */
+        for (int i = 0; i < 100; ++i) {
+		/* TODO:
+		 * Compare the distances between all vertexes in the graph, drawing an edge 
+		 *	if they are within some threshold. A method is provided to give a rough
+		 *	estimate between 2 lat,long points.
+		 *
+		 * example usage: calcDistance(eq1.getLatit(), eq1.getLongit(),
+		 *							   eq2.getLatit(), eq2.getLongit());
+		 * which returns a double representing the distance of two points in KM
+		 */
         }
 
         bridges.visualize();
 
-        for (int i = 0; i < 99; ++i) {
-			/* TODO:
-			 * Reset the locations of the vertices by setting their location to
-			 * 	Double.POSITIVE_INFINITY
-			 *
-			 * 	ex: graph.getVisualizer(key).setLocation(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY) 
-			 */
+        for (int i = 0; i < 100; ++i) {
+		/* TODO:
+		 * Reset the locations of the vertices by setting their location to
+		 *	Double.POSITIVE_INFINITY
+		 *
+		 *	ex: graph.getVisualizer(key).setLocation(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY) 
+		 */
         }
 
         bridges.setMapOverlay(false);
