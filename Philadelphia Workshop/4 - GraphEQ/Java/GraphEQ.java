@@ -8,7 +8,7 @@ import java.util.List;
 
 public class GraphEQ {
 
-    public static double calcDistance(double lo1, double lo2, double la1, double la2) {
+    public static double calcDistance(double la1, double lo1, double la2, double lo2) {
         final int R = 6371; // Radius of the earth in KM
         // Haversine formula to calculate a value between 0 and 1 between 2 points on a sphere, 1 being the
         // opposite side of the sphere
@@ -72,8 +72,8 @@ public class GraphEQ {
                     continue;
 
                 EarthquakeUSGS ua = eqList.get(j);
-                double distance = calcDistance(eq.getLongit(), ua.getLongit(),  // returns distance in km
-                                                eq.getLatit(), ua.getLatit());
+                double distance = calcDistance(eq.getLatit(), eq.getLongit(),  // returns distance in km
+                                                ua.getLatit(), ua.getLongit());
 
                 if (distance < 500) {
                     graph.addEdge(eq.getTitle(), ua.getTitle());
