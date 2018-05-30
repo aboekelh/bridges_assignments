@@ -22,9 +22,9 @@ Style a linked list of earthquake record.
 2. Plug in your credentials.
 3. All the styling will be done in setProperties.
 4. Get the EarthquakeUSGS object from the SLelement.
-5. Get the ElementVisualizer from the SLelement.
-6. Change the size of the element based on the magnitude of the earthquake
-7. Give the element a different shape if the earthquake is in Hawaii, and yet an other shape if it is in Alaska
+5. Get the ElementVisualizer object from the SLelement.
+6. Change the size of the element based on the magnitude of the earthquake.
+7. Give the element a different shape if the earthquake is in Hawaii, and yet an other shape if it is in Alaska.
 
 ### Help
 
