@@ -77,7 +77,7 @@ public class GraphEQ {
 
                 if (distance < 500) {
                     graph.addEdge(eq.getTitle(), ua.getTitle());
-                    graph.setEdgeData(eq.getTitle(), ua.getTitle(), String.valueOf(distance));
+                    graph.getLinkVisualizer(eq.getTitle(), ua.getTitle()).setLabel(String.format("%.2f KM", distance));
                 }
             }
         }
