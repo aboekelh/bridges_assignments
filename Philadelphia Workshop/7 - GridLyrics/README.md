@@ -1,11 +1,11 @@
-SETUP
-=====
+Lyrics
+======
 
 Goals
 -----
 
 The purpose of this assignment is to learn to
-1. Access and manipulate remote data through BRIDGES.
+1. Access lyrics data through BRIDGES.
 2. Manipulate Grid.
 
 Programming part
