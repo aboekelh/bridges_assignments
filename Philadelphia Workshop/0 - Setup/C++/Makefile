@@ -10,3 +10,5 @@ LDLIBS=-lcurl
 
 Setup:
 
+clean:
+	-rm Setup

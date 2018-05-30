@@ -10,13 +10,14 @@ int main() {
 	
 	Bridges::setTitle("Array Example");
 
-	//  allocate array of 10elements
+	//allocate array of 10 elements
 	Array<int> *arr = new Array<int>(10);
 
 	// populate the array, with squares of indices
 	for (int j = 0; j < 10; j++) {
-		arr->getElement(j).setValue(j*j);
-		arr->getValue(j).setLabel(to_string(arr->getElement(j).getValue()));
+	  auto el = arr->getElement(j);
+	  el.setValue(j*j);
+	  el.setLabel(to_string(el.getValue()));
 	}
 
 	// color the array elements
@@ -30,7 +31,7 @@ int main() {
 	arr->getElement(7).getVisualizer()->setColor(Color("green"));
 	arr->getElement(8).getVisualizer()->setColor(Color("blue"));
 	arr->getElement(9).getVisualizer()->setColor(Color("black"));
-
+	
 	// tell Bridges what data structure to visualize
 	Bridges::setDataStructure(arr);
 
