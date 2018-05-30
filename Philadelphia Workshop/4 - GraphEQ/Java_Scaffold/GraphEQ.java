@@ -39,7 +39,7 @@ public class GraphEQ {
 			 * ex: graph.getVisualizer(key).setLocation(earthquake.getLongit(), earthquake.getLatit());
 			 * Tweak the colors or other visual elements if you wish
 			 */
-		}
+        }
 
         bridges.setCoordSystemType("equirectangular");
         bridges.setDataStructure(graph);
