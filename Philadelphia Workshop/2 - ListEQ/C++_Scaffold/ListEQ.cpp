@@ -22,10 +22,6 @@ bool endsWith(const std::string &mainStr, const std::string &toMatch)
 }
 
 void setProperties(SLelement<EarthquakeUSGS>* el) {
-  /* Get the magnitude of the earthquake from the SLelement
-   *   (the EarthquakeUSGS object is stored as the value inside the SLelement)
-   */
-
   /*TODO: set the properties on the element based on location, magnitude of the earthquake */
 }
 
