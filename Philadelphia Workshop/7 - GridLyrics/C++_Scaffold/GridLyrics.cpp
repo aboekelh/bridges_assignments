@@ -51,7 +51,7 @@ int main() {
 
 	/* TODO:
 	 * Grab a song from the bridges server and get it's lyrics
-	 * Upon doing so, call the splitLyrics method, passing the lyrics
+	 * Upon doing so, call the lyrics tokenize function, passing the lyrics
 	 * to remove any punctuation or tags in the lyrics, returning
 	 * an array of single cleaned up terms
 	 *
