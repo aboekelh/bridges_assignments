@@ -116,5 +116,15 @@ int main() {
 	// visualize the list
 	Bridges::visualize();
 
+	for (int i=0; i<eqs.size(); ++i) {
+	  auto nvp = graph.getVisualizer(i);
+	  nvp->setLocation(INFINITY, INFINITY);
+	}
+	
+	Bridges::setMapOverlay(false);
+
+	// visualize the list
+	Bridges::visualize();
+	
 	return 0;
 }

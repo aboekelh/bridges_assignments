@@ -30,16 +30,8 @@ public class GridLyrics {
 		lyrics = lyrics.trim();
 		String[] lyricsSplit = lyrics.split("\\n+");
 		String[][] corpus = new String[lyricsSplit.length][];
-		for (int i = 0; i < corpus.length; i++)                    // clears special characters from individual terms
-		{
+		for (int i = 0; i < corpus.length; i++) {                    // clears special characters from individual terms
 		    corpus[i] = splitLyrics(lyricsSplit[i]);
-//			corpus[i] = lyricsSplit[i].split("\\s+");
-//			for (int j = 0; j < corpus[i].length; j++)
-//			{
-//				corpus[i][j] = corpus[i][j].replaceAll("\\W+$", "");
-//				corpus[i][j] = corpus[i][j].replaceAll("^\\W+", "");
-//				corpus[i][j] = corpus[i][j].trim();
-//			}
 		}
 
 		return corpus;
@@ -136,13 +128,14 @@ public class GridLyrics {
 
 		for (int i = 0; i < wordCount; ++i) {
 		    for (int j = 0; j < wordCount; ++j) {
-			    if (lyrics[i].equalsIgnoreCase(lyrics[j]))r
+			    if (lyrics[i].equalsIgnoreCase(lyrics[j]))
 			        grid.set(i, j, matchColor);
 			    else
 			        grid.set(i, j, defaultColor);
 			}
 		}
 
+		bridges.setTitle("Song Grids");
 		bridges.setDataStructure(grid);
 		bridges.visualize();
 
@@ -163,7 +156,6 @@ public class GridLyrics {
                 // calculates the cosine between the vectors and stores it in the corresponding index of the matrix
                 float cos = cosine(documentVectors[i], documentVectors[j]);
                 grid.set(i, j, new Color(matchColor.getRed(), matchColor.getGreen(), matchColor.getBlue(), cos));
-                System.out.println(grid.get(i, j).getRepresentation());
             }
 		}
         bridges.setDataStructure(grid);

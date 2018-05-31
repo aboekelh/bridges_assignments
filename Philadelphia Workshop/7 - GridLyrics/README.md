@@ -6,24 +6,58 @@ Goals
 
 The purpose of this assignment is to learn to
 1. Access lyrics data through BRIDGES.
-2. Manipulate Grid.
+2. Manipulate a ColorGrid object.
+3. Show repetition patterns in songs.
+
+You will generate a visualization that looks like [that](http://bridges-cs.herokuapp.com/assignments/7/bridges_workshop)!
+
 
 Programming part
 ----------------
 
 ### Task
 
-TODO
+In this assignment, the objective is to pull a song from Bridges, split the lyrics into 
+ individual words and compare each word against every other word to check for repetition.
+
+ From these lyrics you will be building a matrix, or a ColorGrid in this case, where every row and 
+ every column represents a sequential word in the song's lyrics.
+
+ Upon finding repetition, you will be setting the pixel at that location to a color 
+ of your choice at that point in the grid.
 
 ### Basic
 
 1. Open your scaffolded code.
 2. Plug in your credentials.
-3. TODO 
+3. Complete the TODO's
+4. Run and visualize the code
 
-### Build ColorGrid 
+### Build a ColorGrid 
 
-1. TODO
+1. Plug in your credentials
+2. Think of any song which contains words
+3. Query Bridges for said Song, for Example
+  - in Java
+   ```Java
+	Song mySong = Bridges.getSong("My Favorite Song", "Optional Artist String");	
+	String lyrics = mySong.getLyrics();
+   ```
+   - in C++
+   ```C++
+	Song mySong = DataSource::getSong("My Favorite Song", "Optional Artist String");	
+	auto lyrics = mySong.getLyrics();
+   ```
+4. Pass these lyrics through the provided helper function which will clean up and split the
+ lyrics in to an array of squeaky clean Strings.
+
+5. Initialize a ColorGrid with the dimensions the size of the array returned from the helper function
+
+6. Itterate over the split lyrics array, checking to see if there is any repetition such that, if the
+ first word is the same as the 6 word, you would color the pixel at (1, 6) and later on at (6, 1)
+
+7. After filling out your grid, set it as the data structure on your Bridges object, and run the code.
+
 
 ### Help
 
@@ -33,6 +67,8 @@ TODO
 
 [Color documentation](http://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_color.html)
 
+[Song documentation](http://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1data__src__dependent_1_1_song.html)
+
 [Bridges class documentation](http://bridgesuncc.github.io/doc/java-api/current/html/namespacebridges_1_1base.html)
 
 #### for C++
@@ -40,6 +76,8 @@ TODO
 [ColorGrid documentation](http://bridgesuncc.github.io/doc/cxx-api/current/html/classbridges_1_1_color_grid.html)
 
 [Color documentation](http://bridgesuncc.github.io/doc/cxx-api/current/html/classbridges_1_1_color.html)
+
+[Song documentation](http://bridgesuncc.github.io/doc/cxx-api/current/html/classbridges_1_1_song.html)
 
 [DataSource documentation](http://bridgesuncc.github.io/doc/cxx-api/current/html/namespacebridges_1_1_data_source.html#details)
 
