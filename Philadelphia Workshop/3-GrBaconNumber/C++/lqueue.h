@@ -22,8 +22,18 @@ private:
   SLelement<E>* rear;       // Pointer to rear queue node
   int size;					// Number of elements in queue
 
+
+  // Assert: If "val" is false, print a message and terminate
+  // the program
+  static void Assert(bool val, string s) {
+    if (!val) { // Assertion failed -- close the program
+      cout << "Assertion Failed: " << s << endl;
+      exit(-1);
+    }
+  }
+
 public:
-  LQueue(int sz =defaultSize) // Constructor 
+  LQueue(int sz = 10) // Constructor 
     { front = rear = new SLelement<E>(); size = 0; }
 
   ~LQueue() { clear(); delete front; }      // Destructor
