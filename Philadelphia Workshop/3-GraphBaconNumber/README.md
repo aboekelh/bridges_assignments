@@ -28,8 +28,15 @@ Highlight the shortest path between two actors in a Movie Actor graph.
 1. Write a BFS traversal in getBaconNumber that keeps track of parent information.
 
 ```algorithm
-something
-  somethingelse
+BFS(G=(V,E), root)
+  for all v \in V
+    mark[v] = false;
+  mark[root] = true;
+  queue.push(root);
+  while (! queue.empty() )
+    v = queue.pop();
+    for (u \in neighboor(v))
+      if mark[u]
 ```
 
 ### Style the BFS path
