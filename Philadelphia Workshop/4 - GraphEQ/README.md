@@ -52,8 +52,6 @@ locations of the 100 strongest earthquakes.
 
 #### for Java
 
-[SLelement documentation](http://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_s_lelement.html)
-
 [Element documentation](http://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_element.html)
 
 [GraphAdjListSimple documentation](http://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_graph_adj_list_simple.html)
@@ -67,8 +65,6 @@ locations of the 100 strongest earthquakes.
 [Bridges class documentation](http://bridgesuncc.github.io/doc/java-api/current/html/namespacebridges_1_1base.html)
 
 #### for C++
-
-[SLelement documentation](http://bridgesuncc.github.io/doc/cxx-api/current/html/classbridges_1_1_s_lelement.html)
 
 [Element documentation](http://bridgesuncc.github.io/doc/cxx-api/current/html/classbridges_1_1_element.html)
 
