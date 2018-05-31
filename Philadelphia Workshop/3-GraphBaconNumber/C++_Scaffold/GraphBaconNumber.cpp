@@ -50,7 +50,10 @@ void buildActorMovieGraph(GraphAdjList<string, string> *gr) {
 		// TODO : Highlight "Cate_Blanchett" node and the movie nodes she is 
 		// connected to  in "red" and do the same for "Kevin_Bacon_(I)" in "green"
 		// specify colors by Color("red"), for example
-
+		//
+		// You can get a LinkVisualizer with gr->getLinkVisualizer(src, dest).
+		// LinkVisualizer have functions such as setColor().
+		
 	}
 
   
