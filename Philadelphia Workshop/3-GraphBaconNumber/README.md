@@ -29,14 +29,16 @@ Highlight the shortest path between two actors in a Movie Actor graph.
 
 ```algorithm
 BFS(G=(V,E), root)
-  for all v \in V
+  for all v in V
     mark[v] = false;
   mark[root] = true;
   queue.push(root);
   while (! queue.empty() )
     v = queue.pop();
-    for (u \in neighboor(v))
-      if mark[u]
+    for (u in neighboor(v))
+      if (mark[u] == false)
+        mark[u] = true;
+	parent[u] = v;
 ```
 
 ### Style the BFS path
