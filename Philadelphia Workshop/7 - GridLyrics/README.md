@@ -7,6 +7,10 @@ Goals
 The purpose of this assignment is to learn to
 1. Access lyrics data through BRIDGES.
 2. Manipulate a ColorGrid object.
+3. Show repetition patterns in songs.
+
+You will generate a visualization that looks like [that](http://bridges-cs.herokuapp.com/assignments/7/bridges_workshop)!
+
 
 Programming part
 ----------------
