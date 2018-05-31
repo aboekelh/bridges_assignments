@@ -18,13 +18,64 @@ int getBaconNumber (GraphAdjList<string, string> *gr, string src_actor,
 		string dest_actor,	unordered_map<string, string> mark, 
 		unordered_map<string, int> dist, unordered_map<string, string> parent);
 
+
+void buildActorMovieGraph(GraphAdjList<string, string> *gr) {
+	// get the actor movie IMDB data through the BRIDGES API
+	vector<ActorMovieIMDB> actor_list = DataSource::getActorMovieIMDBData(1814);
+
+	for (int k = 0; k < actor_list.size(); k++) {
+	  string actor, movie;
+
+	  // get the actor and movie names
+		actor = actor_list[k].getActor();
+		movie = actor_list[k].getMovie();
+
+		// our graph needs to have a unique set of actors and movies;
+		// so create the actor and movie vertices only if they dont already
+		// exit; use an STL map to check for that
+
+		// first get the graph's vertex list
+		unordered_map<string, Element<string>*> *vertices = gr->getVertices();
+
+		// add actor if it does not exist
+		if (vertices->find(actor) == vertices->end()) 
+			gr->addVertex(actor);
+
+		// add movie if it does not exist
+		if (vertices->find(movie) == vertices->end()) 
+			gr->addVertex(movie);
+
+					// create the edge -- assumes no duplicate edges 
+					// undirected graph, edges go both ways
+		gr->addEdge(actor, movie, 1);
+		gr->addEdge(movie, actor, 1);
+
+					// TO DO : Highlight "Cate_Blanchett" node and the movie nodes she is 
+					// connected to  in "red" and do the same for "Kevin_Bacon_(I)" in "green"
+					// specify colors by Color("red"), for example
+		if (actor == "Cate_Blanchett") {
+			gr->getLinkVisualizer (actor, movie)->setColor (Color("yellow"));
+			gr->getVisualizer (actor)->setColor (Color("yellow"));
+			gr->getVisualizer (movie)->setColor (Color("yellow"));
+		}
+		if (actor == "Kevin_Bacon_(I)") {
+			gr->getLinkVisualizer (actor, movie)->setColor (Color("green"));
+			gr->getVisualizer (actor)->setColor (Color("green"));
+			gr->getVisualizer (movie)->setColor (Color("green"));
+		}
+
+	}
+
+  
+}
+
 int main() {
 	string hilite_color = "orange", 
 			def_color = "green",
 			end_color = "red";
 		
 	// Initialize BRIDGES with your credentials
-	Bridges::initialize(13, "kalpathi60", "486749122386");
+	Bridges::initialize(103, "bridges_workshop", "1298385986627");
 
 	// set title for visualization
 	Bridges::setTitle("Bacon Number: IMDB Actor-Movie Data");
@@ -32,51 +83,7 @@ int main() {
 	// use an adjacency list based graph
 	GraphAdjList<string> gr;
 
-	// get the actor movie IMDB data through the BRIDGES API
-	vector<ActorMovieIMDB> actor_list = DataSource::getActorMovieIMDBData(1814);
-
-	string actor, movie;
-	for (int k = 0; k < actor_list.size(); k++) {
-
-					// get the actor and movie names
-		actor = actor_list[k].getActor();
-		movie = actor_list[k].getMovie();
-
-		// our graph needs to have a unique set of actors and movies;
-		// so reate the actor and movie vertices only if they dont already
-		// exit; use an STL map to check for that
-
-		// first get the graph's vertex list
-		unordered_map<string, Element<string>*> *vertices = gr.getVertices();
-
-		// add actor if it does not exist
-		if (vertices->find(actor) == vertices->end()) 
-			gr.addVertex(actor);
-
-		// add movie if it does not exist
-		if (vertices->find(movie) == vertices->end()) 
-			gr.addVertex(movie);
-
-					// create the edge -- assumes no duplicate edges 
-					// undirected graph, edges go both ways
-		gr.addEdge(actor, movie, 1);
-		gr.addEdge(movie, actor, 1);
-
-					// TO DO : Highlight "Cate_Blanchett" node and the movie nodes she is 
-					// connected to  in "red" and do the same for "Kevin_Bacon_(I)" in "green"
-					// specify colors by Color("red"), for example
-		if (actor == "Cate_Blanchett") {
-			gr.getLinkVisualizer (actor, movie)->setColor (Color("yellow"));
-			gr.getVisualizer (actor)->setColor (Color("yellow"));
-			gr.getVisualizer (movie)->setColor (Color("yellow"));
-		}
-		if (actor == "Kevin_Bacon_(I)") {
-			gr.getLinkVisualizer (actor, movie)->setColor (Color("green"));
-			gr.getVisualizer (actor)->setColor (Color("green"));
-			gr.getVisualizer (movie)->setColor (Color("green"));
-		}
-
-	}
+	buildActorMovieGraph(&gr);
 
 	//set the data structure handle, and visualize the input graph
 	Bridges::setDataStructure(&gr);
