@@ -11,7 +11,7 @@ double degree_to_rad(double d) {
 }
 
 double calcDistance(double la1, double lo1, double la2, double lo2) {
-  double R = 6371; // Radius of the earth in KM
+  double R = 6371; // Radius of the earth in km
   // Haversine formula to calculate a value between 0 and 1 between 2 points on a sphere, 1 being the
   // opposite side of the sphere
   double laDistance = degree_to_rad(la2 - la1);
@@ -23,7 +23,7 @@ double calcDistance(double la1, double lo1, double la2, double lo2) {
   double c = 2. * atan2(sqrt(a), sqrt(1 - a));
 
   
-  double distance = R * c;    //convert to KM
+  double distance = R * c;    //convert to km
   return distance;
 }
 
@@ -38,7 +38,7 @@ int main() {
 	 * Retain only the 100 earthquakes of highest magnitude.
 	 */
 	
-	/*
+	/* TODO:
 	 * Initialize a Graph of your choice (recommend a GraphAdjList <int, EarthquakeUSGS>) 
 	 * Tell Bridges to visualize that graph.
 	 * Add the Earthquakes to the graph as individual vertices.
