@@ -50,7 +50,7 @@ int main() {
 	Bridges::setTitle("Song Grid");
 
 	/* TODO:
-	 * Grab a song from the bridges server and get it's lyrics
+	 * Grab a song from the bridges server and get its lyrics
 	 * Upon doing so, call the lyrics tokenize function, passing the lyrics
 	 * to remove any punctuation or tags in the lyrics, returning
 	 * an array of single cleaned up terms
@@ -66,12 +66,12 @@ int main() {
 	Color matchColor (0, 0, 0, 255);	
 
 	/* TODO:
-	 * Itterate over the lyrics, checking to see if there are matching terms
+	 * Iterate over the lyrics, checking to see if there are matching terms
 	 * if so, set that coordinate to a color representing a match.
 	 *
-	 * Each row and columin will represent an individual word in the lyrics,
+	 * Each row and colum will represent an individual word in the lyrics,
 	 * meaning your main diagonal of your matrix should be completely filled in
-	 * as that represents each word compared against itself
+	 * as that represents each word compared against itself.
 	 */
 
 	// replace YourGridHere with your ColorGrid object and uncomment the line below
