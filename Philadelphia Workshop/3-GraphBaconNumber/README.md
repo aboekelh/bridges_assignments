@@ -9,7 +9,7 @@ The purpose of this assignment is to learn to
 2. Compute BFS on that graph.
 3. Highlight a shortest path in the graph.
 
-You will generate a visualization that looks like [that](http://bridges-clone.herokuapp.com/assignments/3/bridges_workshop)!
+You will generate a visualization that looks like [that](http://bridges-cs.herokuapp.com/assignments/3/bridges_workshop)!
 
 Programming part
 ----------------
