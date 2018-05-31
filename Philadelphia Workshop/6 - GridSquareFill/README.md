@@ -43,4 +43,4 @@ TODO
 [DataSource documentation](http://bridgesuncc.github.io/doc/cxx-api/current/html/namespacebridges_1_1_data_source.html#details)
 
 ### Sample Output
-[Example](GridFillExample.png)
+![Example](GridFillExample.png)
