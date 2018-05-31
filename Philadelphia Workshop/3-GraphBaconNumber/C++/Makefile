@@ -8,8 +8,8 @@ CXXFLAGS= -std=c++14 -I $(BRIDGES_INC) -I $(BRIDGES_INC)/data_src -I $(RAPIDJSON
 
 LDLIBS=-lcurl
 
-ListEQ:
+GraphBaconNumber:
 
 clean:
-	-rm ListEQ
+	-rm GraphBaconNumber
 
