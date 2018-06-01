@@ -26,7 +26,7 @@ the Actor Movie IMDB data set.
 
 1. Change SLelement to be a list of ActorMovieIMDB.
 2. For each entry in the set of actor movie, create a SLelement to store it with an explicit label.
-   1. We reccommend you add each new entry to the head of the list for simplicity.
+   1. We recommend you add each new entry to the head of the list for simplicity.
 3. Compile and run the code and observe the linked list of (actor,movie) pairs.
 
 ### Help
