@@ -45,4 +45,4 @@ the Actor Movie IMDB data set.
 
 [Element documentation](http://bridgesuncc.github.io/doc/cxx-api/current/html/classbridges_1_1_element.html)
 
-[ActorMovieIMDB documentation *MISSING* ]()
+[ActorMovieIMDB documentation](http://bridgesuncc.github.io/doc/cxx-api/current/html/classbridges_1_1_actor_movie_i_m_d_b.html)
