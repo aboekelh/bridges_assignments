@@ -46,4 +46,4 @@ Style a linked list of earthquake record.
 
 [ElementVisualizer documentation](http://bridgesuncc.github.io/doc/cxx-api/current/html/classbridges_1_1_element_visualizer.html)
 
-[EarthquakeUSGS documentation **MISSING** ]()
+[EarthquakeUSGS documentation](http://bridgesuncc.github.io/doc/cxx-api/current/html/classbridges_1_1_earthquake_u_s_g_s.html)
